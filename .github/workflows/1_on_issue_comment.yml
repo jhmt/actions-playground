@@ -6,9 +6,9 @@ on:
     types: [created]
 
 jobs:
-  printLog:
+  printMessage:
     runs-on: ubuntu-latest
 
     steps:
-    - name: print log
-      run: echo "You got a comment on issue"
+    - name: print message
+      run: echo "An issue commant is added! Triggered by $GITHUB_ACTOR"
