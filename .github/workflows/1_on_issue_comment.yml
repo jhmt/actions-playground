@@ -1,0 +1,14 @@
+name: actions1 on issue comment
+
+on:
+  workflow_dispatch:
+  issue_comment:
+    types: [created]
+
+jobs:
+  printLog:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: print log
+      run: echo "You got a comment on issue"
